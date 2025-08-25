@@ -5,6 +5,7 @@ export default defineDb({
   tables: {
     Todo_a1: defineTable({
       columns: {
+        id: column.number({ primaryKey: true, autoIncrement: true, unique: true }),
         title: column.text(),
         completed: column.boolean({ default: false }),
         createdAt: column.date({ default: NOW }),
