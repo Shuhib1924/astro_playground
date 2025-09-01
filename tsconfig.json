@@ -9,6 +9,10 @@
   ],
  "compilerOptions": {
   "jsx": "react-jsx",
-  "jsxImportSource": "@builder.io/qwik"
+  "jsxImportSource": "@builder.io/qwik",
+  "baseUrl": ".",
+    "paths": {
+      "@tailwind": ["src/styles/global.css"]
+    }
 }
 }
